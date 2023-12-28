@@ -2,12 +2,82 @@ body {
     background-color: #f0f1ec;
 }
 
-.header-img {
-    width: 16px;
-    margin-right: 5px;
-}
-
 ul li {
     color: #3a5065;
 }
 
+.top-info ul {
+    display: flex;
+    border: 1px solid red;
+}
+
+ul li {
+    justify-content: space-between;
+}
+
+/* styling the navbar menu so it's responsive */
+@media (max-width: 430px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        display: none;
+      }
+    
+      .navbar.show {
+        display: flex;
+      }
+
+    .hamburger-icon-container {
+        color:red;
+        height: 1.7em;
+        width: 1.7em;
+        position: relative;
+        cursor: pointer;
+        background: currentColor;
+        border:10px solid currentColor;
+        border-radius: 3px;
+      }
+      
+      .hamburger-icon,
+      .hamburger-icon:before,
+      .hamburger-icon:after {
+        content: '';
+        position: absolute;
+        height: 3px;
+        width: 1.7em;
+        background: white;
+        transition: all .2s ease;
+      }
+      
+      .hamburger-icon {
+        top: 0.75em
+      }
+      
+      .hamburger-icon:before {
+        top: -0.55em
+      }
+      
+      .hamburger-icon:after {
+        top: 0.55em
+      }
+
+    /* when the icon should change it's behaviour */
+
+    .hamburger-active .hamburger-icon-container {
+        color:lime;
+    }
+    
+    .hamburger-active .hamburger-icon {
+        background: transparent;
+        transform: rotate(-135deg)
+    }
+    
+    .hamburger-active .hamburger-icon:before,
+    .hamburger-active .hamburger-icon:after {
+        top: 0
+    }
+    
+    .hamburger-active .hamburger-icon:before {
+        transform: rotate(90deg)
+    }
+}
