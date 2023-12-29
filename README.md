@@ -10,10 +10,19 @@ Will keep this file updated.
 
 For this project I'll use only HTML, CSS and maybe add some vanilla JS.
 
-###########################################
+---
+
 28.12.2023
 
 - added a logo
 - applied first styles
 - created functional hamburger menu
 - applied few favicons
+
+  29.12.2023
+
+- designed the top part of the page on mobile
+- added some border radius to the logo
+- restyled the whole menu section
+- added the links to the top section
+- aria-label added to the anchor tags
