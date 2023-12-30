@@ -1,10 +1,13 @@
 * {
   font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
 }
 
 body {
     background-color: #f0f1ec;
 }
+
+/* start of styling the header section */
 
 .top-info ul {
     display: flex;
@@ -56,11 +59,43 @@ nav {
 }
 
 .navbar {
-  margin-top: 20px;
+  padding-top: 0.5rem;
+  border-radius: 1rem 1rem 0 0;
+  background-color: #cca478;
   display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   justify-content: space-around;
 }
 
 .navbar li {
   font-size: 3rem;
 }
+
+/* end of styling the header section */
+
+.welcome-section {
+  margin-top: 20px;
+}
+
+.welcome {
+  font-size: 1.2rem;
+  text-align: center;
+  text-shadow: 1px 1px 5px #333;
+}
+
+
+/* start of styling the slideshow container */
+
+.slideshow-container {
+  max-width: 400px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+

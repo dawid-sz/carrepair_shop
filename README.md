@@ -9,8 +9,9 @@ Found few designs online. Will chose one of them and implement it with my own tw
 Will keep this file updated.
 
 For this project I'll use only HTML, CSS and maybe add some vanilla JS.
+I do start with mobile first and afterwards I'll apply the changes to normal size also.
 
----
+########################################
 
 28.12.2023
 
@@ -25,4 +26,10 @@ For this project I'll use only HTML, CSS and maybe add some vanilla JS.
 - added some border radius to the logo
 - restyled the whole menu section
 - added the links to the top section
-- aria-label added to the anchor tags
+- aria-label added to the anchor tag
+
+  30.12.2023
+
+- menu section moved to the bottom of the screen on mobile
+- comments added to the css sections
+- wrote HTML for the slideshow
