@@ -9,7 +9,7 @@ Found few designs online. Will chose one of them and implement it with my own tw
 Will keep this file updated.
 
 For this project I'll use only HTML, CSS and maybe add some vanilla JS.
-I do start with mobile first and afterwards I'll apply the changes to normal size also.
+I do start with mobile first and afterwards I'll apply the changes to the normal size also.
 
 ########################################
 
@@ -33,3 +33,11 @@ I do start with mobile first and afterwards I'll apply the changes to normal siz
 - menu section moved to the bottom of the screen on mobile
 - comments added to the css sections
 - wrote HTML for the slideshow
+
+  31.12.2023
+
+- styling the slideshow
+- added javascript for the slideshow
+- added some text to the slideshow
+- started working on the about us section
+- smooth scrool behaviour added
