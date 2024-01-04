@@ -41,3 +41,11 @@ I do start with mobile first and afterwards I'll apply the changes to the normal
 - added some text to the slideshow
 - started working on the about us section
 - smooth scrool behaviour added
+
+  04.01.2023
+
+- adding the about us section
+- adding leistungen section
+- styling the leistungen list with collapsible buttons
+- cllapsible buttons from: https://codepen.io/nuhmanpk/pen/XWqBrae
+- redesigning logo and welcome text space
