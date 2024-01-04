@@ -47,5 +47,5 @@ I do start with mobile first and afterwards I'll apply the changes to the normal
 - adding the about us section
 - adding leistungen section
 - styling the leistungen list with collapsible buttons
-- cllapsible buttons from: https://codepen.io/nuhmanpk/pen/XWqBrae
+- collapsible buttons from: https://codepen.io/nuhmanpk/pen/XWqBrae
 - redesigning logo and welcome text space
