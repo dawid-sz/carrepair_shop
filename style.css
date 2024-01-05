@@ -74,12 +74,11 @@ nav {
 
 .navbar {
   padding-top: 0.5rem;
-  border-radius: 1rem 1rem 0 0;
+  border-radius: 1rem;
   background-color: #cca478;
   display: flex;
   position: fixed;
-  bottom: 0;
-  left: 0;
+  bottom: 10px;
   z-index: 1000;
   width: 100%;
   justify-content: space-around;
@@ -87,7 +86,7 @@ nav {
 }
 
 .navbar li {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 /* end of styling the header section */
@@ -155,7 +154,7 @@ nav {
   margin-top: 20px;
 }
 
-.about-image {
+.image {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -164,7 +163,6 @@ nav {
 .about-image img {
   width: 95%;
   height: auto;
-  border-radius: 2rem;
   margin: 2rem;
 }
 
@@ -307,6 +305,20 @@ button:active i::after {
   100% {
     box-shadow: #333;
   }
+}
+
+/* find us section styling */
+
+.find-us img {
+  width: 95%;
+  height: auto;
+  margin: 2rem;
+}
+
+.company-name {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 2rem;
 }
 
 /* MEDIA QUERY BREAKE POINTS */

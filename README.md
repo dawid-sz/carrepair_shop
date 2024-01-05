@@ -49,3 +49,8 @@ I do start with mobile first and afterwards I'll apply the changes to the normal
 - styling the leistungen list with collapsible buttons
 - collapsible buttons from: https://codepen.io/nuhmanpk/pen/XWqBrae
 - redesigning logo and welcome text space
+
+  05.01.2023
+
+- new section and content added
+- adjusted some styling and naming of the classes
