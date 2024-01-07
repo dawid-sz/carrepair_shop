@@ -51,6 +51,7 @@ hr {
 .logo img {
   border-radius: 35%;
   width: 7rem;
+  margin-left: 1rem;
 }
 
 .welcome-text h1 {
@@ -319,6 +320,38 @@ button:active i::after {
   text-transform: uppercase;
   font-weight: 600;
   margin-top: 2rem;
+}
+
+/* contact section */
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+textarea {
+  height: 200px;
+}
+
+input[type="submit"] {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-container {
+  border-radius: 5px;
+  padding: 20px;
 }
 
 /* MEDIA QUERY BREAKE POINTS */

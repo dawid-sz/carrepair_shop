@@ -54,3 +54,9 @@ I do start with mobile first and afterwards I'll apply the changes to the normal
 
 - new section and content added
 - adjusted some styling and naming of the classes
+
+  07.01.2023
+
+- last section added
+- contact form created
+- added new styling
