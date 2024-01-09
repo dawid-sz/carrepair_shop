@@ -50,7 +50,7 @@ hr {
 }
 
 .logo img {
-  border-radius: 35%;
+  border-radius: 2rem;
   width: 7rem;
   margin-left: 1rem;
   justify-content: flex-end;
@@ -75,28 +75,23 @@ hr {
 
 nav ul li a {
   text-decoration: none;
-  color: white;
-}
-
-nav {
-  background-color: #cca478;
 }
 
 .navbar {
   padding-top: 0.5rem;
-  border-radius: 1rem;
-  background-color: #cca478;
+  border-radius: 0.5rem;
+  background-color: white;
   display: flex;
   position: fixed;
-  bottom: 10px;
+  bottom: 1rem;
   z-index: 1000;
   width: 100%;
   justify-content: space-around;
-  display: none; /* DELETE AFTER STYLING ALL */
 }
 
-.navbar li {
+.navbar li i {
   font-size: 2.5rem;
+  color: black;
 }
 
 /* end of styling the header section */
@@ -124,11 +119,18 @@ nav {
   position: absolute;
   bottom: 0;
   text-align: center;
-  background-color: black;
   width: 100%;
   color: white;
-  padding: 10px;
+  padding-top: 50px;
+  padding-bottom: 10px;
   border-radius: 0 0 2rem 2rem;
+  background: rgb(0, 36, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 36, 36, 0) 11%,
+    rgba(0, 0, 0, 0.9192051820728291) 48%,
+    rgba(15, 14, 14, 1) 100%
+  );
 }
 
 /* animation part */
@@ -174,6 +176,7 @@ nav {
   width: 95%;
   height: auto;
   margin: 2rem;
+  border-radius: 0.5rem;
 }
 
 .about-us-container,
@@ -248,6 +251,7 @@ button span {
   width: 95%;
   height: auto;
   margin: 2rem;
+  border-radius: 0.5rem;
 }
 
 .company-name {
@@ -268,6 +272,11 @@ textarea {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+  color: black;
+}
+
+option {
+  color: black;
 }
 
 textarea {
@@ -286,6 +295,10 @@ input[type="submit"] {
 .form-container {
   border-radius: 5px;
   padding: 20px;
+}
+
+.head-title {
+  font-weight: 600;
 }
 
 /* MEDIA QUERY BREAKE POINTS */
