@@ -386,6 +386,19 @@ input[type="submit"] {
   font-weight: 600;
 }
 
+/* footer style */
+.fixed-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.footer-text {
+  color: white;
+}
+
 /* MEDIA QUERY BREAKE POINTS */
 
 /* Extra small devices (phones, 400px and down) */
