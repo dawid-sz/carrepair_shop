@@ -31,3 +31,19 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+
+//navbar hamburger menu
+const hamburger = document.querySelector(".hamburger");
+const menu = document.querySelector(".menu");
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  menu.classList.toggle("active");
+  if (menu.classList.contains("slide-up")) {
+    menu.classList.remove("slide-up");
+    menu.classList.add("slide-down");
+  } else {
+    menu.classList.remove("slide-down");
+    menu.classList.add("slide-up");
+  }
+});

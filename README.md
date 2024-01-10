@@ -60,3 +60,11 @@ I do start with mobile first and afterwards I'll apply the changes to the normal
 - last section added
 - contact form created
 - added new styling
+
+  10.01.2023
+
+- some content added
+- changed the background
+- changed the welcome text font
+- changed the logo appearance and welcome text
+- navbar style changed and animated
