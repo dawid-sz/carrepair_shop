@@ -309,7 +309,6 @@ hr {
 button {
   display: inline-block;
   outline: 0;
-  cursor: pointer;
   border: none;
   padding: 0 56px;
   height: 45px;
@@ -319,15 +318,12 @@ button {
   font-size: 16px;
   background: #fff;
   box-shadow: 0 4px 14px 0 rgb(0 0 0 / 10%);
-  transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
-  :hover {
-    background: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 6px 20px rgb(93 93 93 / 23%);
-  }
 }
 
-button span {
+button span,
+#datenbtn {
   color: black;
+  width: 100%;
 }
 
 /* find us section styling */
@@ -348,6 +344,7 @@ button span {
 /* contact section */
 
 input[type="text"],
+input[type="email"],
 select,
 textarea {
   width: 100%;
@@ -412,24 +409,6 @@ input[type="submit"] {
 }
 /* Large devices (Laptops/Desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  button:hover {
-    letter-spacing: 0.2rem;
-    padding: 1.1rem 3.1rem;
-    background: var(--clr);
-    color: var(--clr);
-    /* box-shadow: 0 0 35px var(--clr); */
-    animation: box 3s infinite;
-  }
-  button:hover i::before {
-    width: 15px;
-    left: 20%;
-    animation: move 3s infinite;
-  }
-  button:hover i::after {
-    width: 15px;
-    left: 80%;
-    animation: move 3s infinite;
-  }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {

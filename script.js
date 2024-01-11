@@ -47,3 +47,17 @@ hamburger.addEventListener("click", () => {
     menu.classList.add("slide-up");
   }
 });
+
+//change the mehranzeigen text to wenigeranzeigen
+let button = document.querySelector("#datenbtn");
+
+let initialText = "Mehranzeigen";
+let alternateText = "Wenigeranzeigen";
+
+button.addEventListener("click", function () {
+  if (button.textContent === alternateText) {
+    button.textContent = initialText;
+  } else {
+    button.textContent = alternateText;
+  }
+});

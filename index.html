@@ -360,21 +360,23 @@
           <h1 class="title-container">Kontakt Formular</h1>
 
           <div class="form-container">
-            <form action="beispiel_seite.php">
-              <label for="firstName">Vorname</label>
+            <form method="post" action="contact-form-process.php">
+              <label for="name">Vor- und Nachname</label>
               <input
                 type="text"
-                id="firstName"
-                name="firstname"
-                placeholder="Deine Vorname..."
+                id="name"
+                name="name"
+                placeholder="Dein Name..."
+                required
               />
 
-              <label for="lastName">Nachname</label>
+              <label for="email">E-Mail Adresse</label>
               <input
-                type="text"
-                id="lastName"
-                name="lastname"
-                placeholder="Deine Nachname"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Deine E-Mail Adresse..."
+                required
               />
 
               <label for="reason">Was ist ihr Anlegen?</label>
@@ -400,9 +402,10 @@
                 name="subject"
                 id="subject"
                 placeholder="Schreib uns dein Anlegen..."
+                required
               ></textarea>
 
-              <input type="submit" value="Submit" />
+              <input type="submit" value="Abschicken" />
             </form>
           </div>
         </div>
@@ -431,7 +434,7 @@
             <br />E-Mail Adresse: info@carrepair-berlin.de
             <br />Geschäftsführer/ Inhaber: Arne Bartz
           </p>
-          <button type="button" class="collapsible">
+          <button type="button" class="collapsible" id="datenbtn">
             <span>Mehranzeigen</span>
           </button>
           <div class="content">
