@@ -409,6 +409,111 @@ input[type="submit"] {
 }
 /* Large devices (Laptops/Desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  /* top section */
+  .top-info ul li {
+    flex: 1;
+    font-size: 1.5rem;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .open-time {
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 5px;
+    padding-bottom: 5px;
+  }
+
+  hr {
+    width: 60%;
+    border-style: double;
+    color: lightgray;
+    margin: 20px auto;
+  }
+  /* top section */
+
+  /* welcome section with logo and text */
+  .welcome-section {
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo img {
+    border-radius: 2rem;
+    width: 100%;
+  }
+
+  .welcome-text h1 {
+    font-size: 5rem;
+    text-shadow: 1px 1px 5px #333;
+    text-transform: uppercase;
+    font-family: "Bebas Neue";
+    text-align: center;
+    letter-spacing: 0.5rem;
+    margin-left: 2rem;
+  }
+
+  .welcome-text p {
+    font-family: "Bebas Neue";
+    text-align: center;
+    font-size: 2.5rem;
+    letter-spacing: 0.3rem;
+  }
+  /* welcome section with logo and text */
+
+  /* slideshow styling with about us section*/
+  .slideshow-container {
+    display: flex;
+    float: left;
+    max-width: 40%;
+    margin-left: 5rem;
+    margin-top: 2rem;
+  }
+
+  .about-us-container {
+    display: flex;
+    width: 50%;
+  }
+
+  .title-container {
+    font-size: 2rem;
+    padding-top: 0.7rem;
+  }
+
+  .about-image {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* slideshow styling with about us section */
+
+  /* leistungen section with buttons */
+  .collapsible {
+    width: 30%;
+  }
+
+  .content {
+    width: 30%;
+  }
+  /* leistungen section with buttons */
+
+  /* contact section with the contact form */
+  .form-container {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #datenbtn {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* contact section with the contact form */
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
