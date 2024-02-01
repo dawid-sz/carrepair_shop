@@ -517,4 +517,27 @@ input[type="submit"] {
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+  .find-us img {
+    width: 50%;
+    height: auto;
+    margin: 2rem;
+    border-radius: 0.5rem;
+  }
+  
+  .company-name {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 2rem;
+  }
+
+  .find-us-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .datenschutz-section {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
