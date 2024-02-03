@@ -466,18 +466,6 @@ input[type="submit"] {
   /* welcome section with logo and text */
 
   /* slideshow styling with about us section*/
-  .slideshow-container {
-    display: flex;
-    float: left;
-    max-width: 40%;
-    margin-left: 5rem;
-    margin-top: 2rem;
-  }
-
-  .about-us-container {
-    display: flex;
-    width: 50%;
-  }
 
   .title-container {
     font-size: 2rem;
@@ -485,7 +473,7 @@ input[type="submit"] {
   }
 
   .about-image {
-    width: 50%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -493,11 +481,11 @@ input[type="submit"] {
 
   /* leistungen section with buttons */
   .collapsible {
-    width: 30%;
+    width: 50%;
   }
 
   .content {
-    width: 30%;
+    width: 50%;
   }
   /* leistungen section with buttons */
 
@@ -513,12 +501,23 @@ input[type="submit"] {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .navbar {
+    display: none;
+  }
+
+  .content-daten {
+    padding: 0 20px;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+  }
   /* contact section with the contact form */
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .find-us img {
-    width: 50%;
+    width: 100%;
     height: auto;
     margin: 2rem;
     border-radius: 0.5rem;
@@ -539,5 +538,37 @@ input[type="submit"] {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .flexcontainer-1 {
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6rem;
+   }
+
+  .slideshow-section {
+    width: 80%;
+  }
+
+  .flexcontainer-2 {
+    display: flex;
+    width: 80%;
+    margin-top: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .leistungen-section {
+    width: 70%;
+  }
+
+  .contact-section {
+    margin-top: 5rem;
+  }
+
+  .content-daten {
+    width: 100%;
   }
 }
