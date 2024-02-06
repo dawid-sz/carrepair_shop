@@ -73,3 +73,8 @@ I do start with mobile first and afterwards I'll apply the changes to the normal
 
 - updated the "Mehranzeigen" button so it shows also "Wenigeranzeigen" after the click
 - fixing styling errors
+
+06.02.2023
+- main changes in design regarding "Leistungen" section
+- cleaned up some code
+- splitted the code to more files to have better overview

@@ -1,22 +1,22 @@
-//image showslider
-let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+//tab gallery change pictures after click on button
+function openImage(evt, imageName) {
+  var i, galleryImg, tablinks, overlays;
+  galleryImg = document.getElementsByClassName("gallery-img");
+  overlays = document.getElementsByClassName("overlay");
+  for (i = 0; i < galleryImg.length; i++) {
+    galleryImg[i].style.display = "none";
+    overlays[i].classList.remove("show");
   }
-  slideIndex++;
-  if (slideIndex > slides.length) {
-    slideIndex = 1;
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
-  slides[slideIndex - 1].style.display = "block";
-  setTimeout(showSlides, 5000); // Change image every 5 seconds
+  document.getElementById(imageName).style.display = "block";
+  document.getElementById("overlay" + imageName.slice(3)).classList.add("show");
+  evt.currentTarget.className += " active";
 }
 
-//leistungen list collapse button
+//collapse button for datenschutz section
 var coll = document.getElementsByClassName("collapsible");
 var i;
 

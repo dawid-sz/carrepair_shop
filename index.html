@@ -6,8 +6,13 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0 maximum-scale=1"
     />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="resetcss.css" />
+    <link rel="stylesheet" href="./Styles/style.css" />
+    <link rel="stylesheet" href="./Styles/resetcss.css" />
+    <link rel="stylesheet" href="./Styles/header.css" />
+    <link rel="stylesheet" href="./Styles/leistungen.css" />
+    <link rel="stylesheet" href="./Styles/findus_contact.css" />
+    <link rel="stylesheet" href="./Styles/navbar.css" />
+    <link rel="stylesheet" href="./Styles/about.css" />
     <link rel="icon" type="image/x-icon" href="\Media\favicon.png" />
     <!-- start import icons -->
     <link
@@ -162,185 +167,142 @@
         <h1 class="title-leist">Leistungen</h1>
       </div>
 
-      <div class="flexcontainer-1">
+      <!-- container with image tab gallery -->
 
-        <section class="slideshow-section">
-          <div class="slideshow-container">
-            <!-- images with caption text and number in the corner-->
-            <div class="mySlides fade">
-              <img src=".\Media\mechanic1.jpg" alt="" />
-              <div class="text-background">
-                <p class="text">Keine Spielereien, keine Tricks,<br/> wir sorgen für einen schnellen
-                  Ölwechsel.</p>
-              </div>
-            </div>
-            <div class="mySlides fade">
-              <img src=".\Media\mechanic2.jpg" alt="" />
-              <div class="text-background">
-                <p class="text">Reifen abgefahren? Wir beraten Sie fachkundig bei der Auswahl
-                  ihrer Reifen oder Felgen!</p>
-              </div>
-            </div>
-            <div class="mySlides fade">
-              <img src=".\Media\mechanic3.jpg" alt="" />
-              <div class="text-background">
-                <p class="text">An Ihrem Fahrzeug ist etwas anderes kaputt? <br/> Kommen Sie gerne
-                  vorbei!</p>
-              </div>
-            </div>
+      <section class="leistungen-section" id="leistungen">
+        <div class="leistungen-container">
+      
+          <div class="tab">
+            <button class="tablinks active" onclick="openImage(event, 'img1')">Dialogannahme</button>
+            <button class="tablinks" onclick="openImage(event, 'img2')">TÜV / AU</button>
+            <button class="tablinks" onclick="openImage(event, 'img3')">Reifen-Service</button>
+            <button class="tablinks" onclick="openImage(event, 'img4')">KFZ- Fehlerdiagnostik</button>
+            <button class="tablinks" onclick="openImage(event, 'img5')">Einbauservice</button>
+            <button class="tablinks" onclick="openImage(event, 'img6')">Reparatur-Service</button>
+            <button class="tablinks" onclick="openImage(event, 'img7')">Inspektion</button>
+            <button class="tablinks" onclick="openImage(event, 'img8')">Motor- und Getriebereparatur</button>
+            <button class="tablinks" onclick="openImage(event, 'img9')">Lack- Karosseriecenter</button>
+            <button class="tablinks" onclick="openImage(event, 'img10')">Lack-Center</button>
+            <button class="tablinks" onclick="openImage(event, 'img11')">Karosserie-Center</button>
           </div>
-        </section>
+      
+          <div class="gallery">
+            <div class="gallery-img-container">
+              <img src="./Media/mechanic1.jpg" alt="Dialogannahme" class="gallery-img" id="img1">
+              <div class="overlay overlay-background" id="overlay1">Mit Ihnen gemeinsam finden wir die Mängel an Ihrem Fahrzeug und besprechen direkt die auszuführenden Arbeiten.</div>
+            </div>
 
-        <section class="leistungen-section" id="leistungen">
-          <div class="leistungen-container container">
-            
-            <button type="button" class="collapsible">
-              <span>Dialogannahme</span>
-            </button>
-            <div class="content">
-              <p>
-                Mit Ihnen gemeinsam finden wir die Mängel an Ihrem Fahrzeug und
-                besprechen direkt die auszuführenden Arbeiten.
-              </p>
+            <div class="gallery-img-container">
+              <img src="./Media/mechanic2.jpg" alt="TÜV / AU" class="gallery-img" id="img2">
+              <div class="overlay overlay-background" id="overlay2">Sollte Ihre Haupt- und Abgasuntersuchung anstehen, können Sie diese amtliche Prüfung schnell und bequem bei uns durchführen lassen. Sie benötigen eine Vollabnahme oder wollen Umbauten eintragen lassen? Wir fahren Ihr Fahrzeug über den TÜV.</div>
             </div>
-            <button type="button" class="collapsible">
-              <span>TÜV / AU</span>
-            </button>
-            <div class="content">
-              <p>
-                Sollte Ihre Haupt- und Abgasuntersuchung anstehen, können Sie
-                diese amtliche Prüfung schnell und bequem bei uns durchführen
-                lassen. Sie benötigen eine Vollabnahme oder wollen Umbauten
-                eintragen lassen? Wir fahren Ihr Fahrzeug über den TÜV.
-              </p>
+
+            <div class="gallery-img-container">
+              <img src="./Media/mechanic3.jpg" alt="Reifen-Service" class="gallery-img" id="img3">
+              <div class="overlay overlay-background" id="overlay3">Reifen abgefahren? Wir beraten Sie fachkundig bei der Auswahl ihrer Reifen oder Felgen!</div>
             </div>
-            <button type="button" class="collapsible">
-              <span>Reifen-Service</span>
-            </button>
-            <div class="content">
-              <p>
-                Reifen abgefahren? Wir beraten Sie fachkundig bei der Auswahl
-                ihrer Reifen oder Felgen!
-              </p>
-            </div>
-            <button type="button" class="collapsible">
-              <span>KFZ- Fehlerdiagnostik</span>
-            </button>
-            <div class="content">
-              <p>
-                Als modernes Unternehmen bieten wir unseren Kunden die
+
+            <div class="gallery-img-container">
+              <img src="./Media/mechanic4.jpg" alt="KFZ- Fehlerdiagnostik" class="gallery-img" id="img4">
+              <div class="overlay overlay-background" id="overlay4">Als modernes Unternehmen bieten wir unseren Kunden die
                 computergestützte Fehlerdiagnose an, darüber hinaus führen wir
                 ebenso die professionelle fachmännische Diagnostik an allen
-                Mercedes-Benz Modellen durch!
-              </p>
+                Mercedes-Benz Modellen durch!</div>
             </div>
-            <button type="button" class="collapsible">
-              <span>Einbauservice</span>
-            </button>
-            <div class="content">
-              <p>
-                Nachrüstung von Zubehör aller Art, wie Standheizungen,
+
+            <div class="gallery-img-container">
+              <img src="./Media/mechanic5.jpg" alt="Einbauservice" class="gallery-img" id="img5">
+              <div class="overlay overlay-background" id="overlay5">Nachrüstung von Zubehör aller Art, wie Standheizungen,
                 Anhängerkupplungen oder Einparkhilfen gehören genauso zur
                 Angebotspalette, wie der Einbau von Telefon-, Audio- und
-                Navigationssystemen.
-              </p>
+                Navigationssystemen.</div>
             </div>
-            <button type="button" class="collapsible">
-              <span>Reparatur-Service</span>
-            </button>
-            <div class="content">
-              <p>
-                In unserer markenunabhängigen Meisterwerkstatt führen wir alle am
+
+            <div class="gallery-img-container">
+              <img src="./Media/mechanic6.jpg" alt="Reparatur-Service" class="gallery-img" id="img6">
+              <div class="overlay overlay-background" id="overlay6">In unserer markenunabhängigen Meisterwerkstatt führen wir alle am
                 PKW anfallenden Reparaturen fachmännisch aus. Selbstverständlich
                 besorgen wir Ihnen auch jedes gewünschte Ersatzteil für Ihr
-                Fahrzeug. <br />
+                Fahrzeug.
                 In punkto Preis/Leistungsverhältnis stellt unser Angebot eine
                 kostengünstige Alternative gegenüber den Herstellerwerkstütten
                 dar. Reden Sie mit uns, wir machen Ihnen ein individuelles
-                Kostenangebot!
-              </p>
+                Kostenangebot!</div>
             </div>
-            <button type="button" class="collapsible">
-              <span>Inspektion</span>
-            </button>
-            <div class="content">
-              <p>
-                Wir arbeiten nach Herstellerangaben und haben das
-                Inspektionsprogramm durch eigene Erfahrungen erweitert.
-              </p>
+
+            <div class="gallery-img-container">
+              <img src="./Media/mechanic7.jpg" alt="Inspektion" class="gallery-img" id="img7">
+              <div class="overlay overlay-background" id="overlay7">Wir arbeiten nach Herstellerangaben und haben das
+                Inspektionsprogramm durch eigene Erfahrungen erweitert.</div>
             </div>
-            <button type="button" class="collapsible">
-              <span>Motor- und Getriebereparatur</span>
-            </button>
-            <div class="content">
-              <p>
-                Ein defekter Motor oder ein defektes Getriebe müssen nicht immer
+
+            <div class="gallery-img-container">
+              <img src="./Media/mechanic8.jpg" alt="Motor- und Getriebereparatur" class="gallery-img" id="img8">
+              <div class="overlay overlay-background" id="overlay8">Ein defekter Motor oder ein defektes Getriebe müssen nicht immer
                 durch neue Teile ersetzt werden. Wir reparieren diese nach
-                klassischem Handwerk.
-              </p>
+                klassischem Handwerk.</div>
             </div>
-            <button type="button" class="collapsible">
-              <span>Lack- Karosseriecenter</span>
-            </button>
-            <div class="content">
-              <p>
-                Sie sind zu Recht stolz auf die makellose Optik Ihres Fahrzeuges.
+
+            <div class="gallery-img-container">
+              <img src="./Media/mechanic9.jpg" alt="Lack- Karosseriecenter" class="gallery-img" id="img9">
+              <div class="overlay overlay-background" id="overlay9">Sie sind zu Recht stolz auf die makellose Optik Ihres Fahrzeuges.
                 Gerade deshalb ist es so wichtig, bei Karosserie- und Lackarbeiten
-                voll und ganz auf Qualität zu setzen. <br />
+                voll und ganz auf Qualität zu setzen.
                 Mit unserem Fachwissen, dem technischen Know-How, sowie der
                 Flexibilität unserer Mitarbeiter garantieren Ihnen einen möglichst
                 kurzen Werkstattaufenthalt und sichern ihnen den Werterhalt Ihres
-                Fahrzeuges über Jahre hinaus. <br />
+                Fahrzeuges über Jahre hinaus.
                 Neben Karosserie- und Lackarbeiten bieten wir auch perfekt
                 abgestimmte Schönheitsreparaturen, die die kleinen Spuren des
                 Alltags beseitigen und die Form und Schönheit Ihres Fahrzeuges wie
                 am ersten Tag erhalten. Denn der erste Eindruck ist immer der
-                wichtigste.
-              </p>
+                wichtigste.</div>
             </div>
-            <button type="button" class="collapsible">
-              <span>Lack-Center</span>
-            </button>
-            <div class="content">
-              <ul>
-                <li>
-                  Reparaturlackierung, Einzelteile, Ausbesserungslackierungen,
-                  Lackaufbereitungen (sprich: jegliche Polierarbeiten)
-                </li>
-                <li>Ganzlackierung, Umlackierung der Fahrzeugfarbe</li>
-                <li>
-                  Sonderlackierung Farbeffektlackierungen (Airbruschlackierungen),
-                  Lackierungen auf eigene Vorstellung des Kunden,
-                  Motorradlackierungen
-                </li>
-                <li>
-                  Alle lackierfähigen Teile/Produkte. Z. B. Handyhüllen / -schalen
-                </li>
-              </ul>
-            </div>
-            <button type="button" class="collapsible">
-              <span>Karosserie-Center</span><i></i>
-            </button>
-            <div class="content">
-              <ul>
-                <li>Unfallinstandsetzung</li>
-                <li>
-                  Karosserieumbauten bzw. -änderungen, ERA, Kunststoff-Polyester
-                </li>
-                <li>Oltimerrestaurierung</li>
-                <li>Richtbank</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-      
-      </div>
 
+            <div class="gallery-img-container">
+              <img src="./Media/mechanic10.jpg" alt="Lack-Center" class="gallery-img" id="img10">
+              <div class="overlay overlay-background" id="overlay10">
+                <ul>
+                  <li>
+                    Reparaturlackierung, Einzelteile, Ausbesserungslackierungen,
+                    Lackaufbereitungen (sprich: jegliche Polierarbeiten)
+                  </li>
+                  <li>Ganzlackierung, Umlackierung der Fahrzeugfarbe</li>
+                  <li>
+                    Sonderlackierung Farbeffektlackierungen (Airbruschlackierungen),
+                    Lackierungen auf eigene Vorstellung des Kunden,
+                    Motorradlackierungen
+                  </li>
+                  <li>
+                    Alle lackierfähigen Teile/Produkte. Z. B. Handyhüllen / -schalen
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="gallery-img-container">
+              <img src="./Media/mechanic11.jpg" alt="Karosserie-Center" class="gallery-img" id="img11">
+              <div class="overlay overlay-background" id="overlay11">
+                <ul>
+                  <li>Unfallinstandsetzung</li>
+                  <li>
+                    Karosserieumbauten bzw. -änderungen, ERA, Kunststoff-Polyester
+                  </li>
+                  <li>Oldtimerrestaurierung</li>
+                  <li>Richtbank</li>
+                </ul>
+              </div>
+            </div>
+            <!-- Add more images and overlays as needed -->
+          </div>
+        </div>
+      
+      </section>
       <!-- section find us -->
 
       <section class="find-us-section" id="find-us">
         <div class="find-us-container container">
-          <h1 class="title-container">Anfahrt und Routenplaner</h1>
+          <h1 class="title-container">Wo ihr uns findet!</h1>
           <div class="companyflex-container">
             <div class="companydata">
               <p class="company-name">CarRepair-Berlin</p>

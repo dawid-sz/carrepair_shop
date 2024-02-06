@@ -1,0 +1,88 @@
+* {
+  font-family: "Poppins", "Bebas Neue", "Montserrat", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  color: white;
+}
+
+html {
+  background-image: linear-gradient(to right, #870000, #190a05);
+}
+
+
+button span,
+#datenbtn {
+  color: black;
+  width: 100%;
+}
+
+.collapsible {
+  cursor: pointer;
+  height: 3rem;
+  align-items: center;
+}
+
+
+/* footer style */
+.fixed-footer {
+  text-align: center;
+  padding: 10px;
+}
+
+.footer-text {
+  color: white;
+}
+
+/* MEDIA QUERY BREAKE POINTS */
+
+/* Extra small devices (phones, 400px and down) */
+@media only screen and (max-width: 400px) {
+  .top-info ul li {
+    font-size: 0.55rem;
+  }
+}
+/* Small devices (potrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+/* Large devices (Laptops/Desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .collapsible {
+    width: 50%;
+  }
+
+  /* contact section with the contact form */
+  .form-container {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #datenbtn {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .content-daten {
+    padding: 0 20px;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+  }
+  /* contact section with the contact form */
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .datenschutz-section {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .content-daten {
+    width: 100%;
+  }
+}

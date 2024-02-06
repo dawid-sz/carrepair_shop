@@ -1,0 +1,64 @@
+
+.about-us-section {
+    margin-top: 20px;
+  }
+  
+  .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about-image img {
+    width: 95%;
+    height: auto;
+    margin-top: 5rem;
+    border-radius: 0.5rem;
+  }
+  
+  .about-us-container,
+  .container {
+    padding: 0.8rem;
+    max-width: 95%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .title-container {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+  }
+  
+  /* Large devices (Laptops/Desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  /* about us section styling */
+
+  .about-us-section {
+    margin-top: 6rem;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.3rem;
+  }
+
+  .title-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .title-leistungen {
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+  }
+
+  .about-image {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
