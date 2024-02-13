@@ -62,7 +62,7 @@
       width: 100%;
       height: auto;
       margin: 2rem;
-      border-radius: 0.5rem;
+      border-radius: 1rem;
     }
   
     .companyflex-container {
@@ -88,5 +88,9 @@
   
     .contact-section {
       margin-top: 5rem;
+    }
+
+    .form-container {
+      width: 35vw;
     }
   }
