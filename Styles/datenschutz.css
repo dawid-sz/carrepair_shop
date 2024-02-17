@@ -1,0 +1,68 @@
+button span,
+#datenbtn {
+  color: black;
+  width: 100%;
+}
+
+.collapsible {
+  cursor: pointer;
+  height: 3rem;
+  align-items: center;
+}
+
+.content-daten {
+    padding: 0 20px;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+}
+
+#datenbtn {
+    width: 1fr;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 400;
+    font-size: 1rem;
+    border-radius: 7px;
+    box-shadow: 0 4px 14px 0 rgb(0 0 0 / 10%);
+}
+
+/* Large devices (Laptops/Desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .collapsible {
+        width: 50%;
+    }
+
+    /* contact section with the contact form */
+    .form-container {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #datenbtn {
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: 400;
+        font-size: 1rem;
+        border-radius: 7px;
+        box-shadow: 0 4px 14px 0 rgb(0 0 0 / 10%);
+    }
+
+    .content-daten {
+        padding: 0 20px;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.2s ease-out;
+    }
+    /* contact section with the contact form */
+    }
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {
+    .datenschutz-section {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

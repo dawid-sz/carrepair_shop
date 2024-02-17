@@ -3,18 +3,30 @@ function openImage(evt, imageName) {
   var i, galleryImg, tablinks, overlays;
   galleryImg = document.getElementsByClassName("gallery-img");
   overlays = document.getElementsByClassName("overlay");
-  for (i = 0; i < galleryImg.length; i++) {
-    galleryImg[i].style.display = "none";
-    overlays[i].classList.remove("show");
+  
+  // Toggle display of the clicked image
+  var clickedImage = document.getElementById(imageName);
+  if (clickedImage.style.display === "block") {
+    clickedImage.style.display = "none";
+    document.getElementById("overlay" + imageName.slice(3)).classList.remove("show");
+  } else {
+    for (i = 0; i < galleryImg.length; i++) {
+      galleryImg[i].style.display = "none";
+      overlays[i].classList.remove("show");
+    }
+    document.getElementById(imageName).style.display = "block";
+    document.getElementById("overlay" + imageName.slice(3)).classList.add("show");
+    
+    // Remove "active" class from all tablinks
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    // Add "active" class to the clicked tablink
+    evt.currentTarget.className += " active";
   }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(imageName).style.display = "block";
-  document.getElementById("overlay" + imageName.slice(3)).classList.add("show");
-  evt.currentTarget.className += " active";
 }
+
 
 //collapse button for datenschutz section
 var coll = document.getElementsByClassName("collapsible");

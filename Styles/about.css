@@ -10,9 +10,9 @@
   }
   
   .about-image img {
-    width: 95%;
+    width: 90%;
     height: auto;
-    margin-top: 5rem;
+    margin-top: 1rem;
     border-radius: 0.5rem;
   }
   
@@ -31,7 +31,6 @@
     font-size: 2.8rem;
     font-weight: 600;
     text-transform: uppercase;
-    margin-bottom: 2rem;
   }
   
   /* Large devices (Laptops/Desktops, 992px and up) */
@@ -49,6 +48,7 @@
   .title-container {
     margin-left: auto;
     margin-right: auto;
+    text-decoration: underline;
   }
 
   .title-leistungen {

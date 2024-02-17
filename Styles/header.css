@@ -57,8 +57,14 @@
     text-align: center;
     letter-spacing: 0.3rem;
   }
-  
 
+/* Extra small devices (phones, 400px and down) */
+@media only screen and (max-width: 400px) {
+  .top-info ul li {
+    font-size: 0.55rem;
+  }
+}
+  
 /* Large devices (Laptops/Desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     /* top section */

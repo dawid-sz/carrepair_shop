@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./Styles/header.css" />
     <link rel="stylesheet" href="./Styles/leistungen.css" />
     <link rel="stylesheet" href="./Styles/findus_contact.css" />
+    <link rel="stylesheet" href="./Styles/datenschutz.css" />
     <link rel="stylesheet" href="./Styles/navbar.css" />
     <link rel="stylesheet" href="./Styles/about.css" />
     <link rel="icon" type="image/x-icon" href="\Media\favicon.png" />
@@ -163,13 +164,13 @@
 
       <!-- section leistungen -->
 
-      <div class="title-container title-leistungen">
+      <div class="title-container title-leistungen" id="leistungen">
         <h1 class="title-leist">Leistungen</h1>
       </div>
 
       <!-- container with image tab gallery -->
 
-      <section class="leistungen-section" id="leistungen">
+      <section class="leistungen-section">
         <div class="leistungen-container">
       
           <div class="tab">
@@ -336,6 +337,7 @@
                 name="name"
                 placeholder="Name..."
                 required
+                autocomplete="off"
               />
 
               <label for="email">E-Mail Adresse</label>
@@ -345,6 +347,7 @@
                 name="email"
                 placeholder="E-Mail Adresse..."
                 required
+                autocomplete="off"
               />
 
               <label for="reason">Was ist ihr Anlegen?</label>
