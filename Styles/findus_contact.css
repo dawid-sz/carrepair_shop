@@ -60,9 +60,15 @@ input[type="submit"] {
   font-weight: 600;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
   .find-us img {
     border-radius: 1.5rem;
+  }
+
+   .form-container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -105,6 +111,8 @@ input[type="submit"] {
   }
 
   .form-container {
-    width: 35vw;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

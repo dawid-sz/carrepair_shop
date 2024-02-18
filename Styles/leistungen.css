@@ -71,7 +71,7 @@
   display: block;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   .tab {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -100,7 +100,7 @@
   }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
   .tab {
     grid-template-columns: repeat(6, 1fr);
   }
@@ -132,10 +132,19 @@
   .overlay-background {
     padding-top: 12rem;
   }
+
+  .title-leistungen {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+  }
 }
 
 
 @media only screen and (min-width: 1200px) {
+  .title-leistungen {
+    margin-top: 5rem;
+  }
+
   .leistungen-container {
     display: flex;
     flex-direction: column;

@@ -78,3 +78,9 @@ I do start with mobile first and afterwards I'll apply the changes to the normal
 - main changes in design regarding "Leistungen" section
 - cleaned up some code
 - splitted the code to more files to have better overview
+
+18.02.2023
+- a lot of style adjustments in every section
+- adjusted the view to mobile, medium and large screens
+- the buttons on leistungen sections were restyled
+- applied grid to some elements to place them better

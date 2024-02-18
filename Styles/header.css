@@ -66,7 +66,7 @@
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   .top-info ul li {
     flex: 1;
     font-size: 1.2rem;
@@ -86,66 +86,112 @@
 }
   
 /* Large devices (Laptops/Desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    /* top section */
-    .top-info {
-      width: 100%;
-      margin-right: auto;
-      margin-left: auto;
-    }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /* top section */
+  .top-info {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
 
-    .top-info ul li {
-      flex: 1;
-      font-size: 1.5rem;
-      font-family: "Bebas Neue", sans-serif;
-      letter-spacing: 1px;
-      text-align: center;
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-    }
-  
-    .open-time {
-      text-align: center;
-      font-size: 2rem;
-      font-family: "Bebas Neue", sans-serif;
-      letter-spacing: 5px;
-      padding-bottom: 5px;
-    }
-  
-    hr {
-      width: 60%;
-      border-style: double;
-      color: lightgray;
-      margin: 20px auto;
-    }
-    /* top section */
-  
-    /* welcome section with logo and text */
-    .welcome-section {
-      display: flex;
-      justify-content: center;
-    }
-  
-    .logo img {
-      border-radius: 2rem;
-      width: 100%;
-    }
-  
-    .welcome-text h1 {
-      font-size: 5rem;
-      text-shadow: 1px 1px 5px #333;
-      text-transform: uppercase;
-      font-family: "Bebas Neue";
-      text-align: center;
-      letter-spacing: 0.5rem;
-      margin-left: 2rem;
-    }
-  
-    .welcome-text p {
-      font-family: "Bebas Neue";
-      text-align: center;
-      font-size: 2.5rem;
-      letter-spacing: 0.3rem;
-    }
-    /* welcome section with logo and text */
+  .top-info ul li {
+    flex: 1;
+    font-size: 1.5rem;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .open-time {
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 5px;
+    padding-bottom: 5px;
+  }
+
+  hr {
+    width: 60%;
+    border-style: double;
+    color: lightgray;
+    margin: 20px auto;
+  }
+  /* top section */
+
+  /* welcome section with logo and text */
+  .welcome-section {
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo img {
+    border-radius: 2rem;
+    width: 100%;
+  }
+
+  .welcome-text h1 {
+    font-size: 5rem;
+    text-shadow: 1px 1px 5px #333;
+    text-transform: uppercase;
+    font-family: "Bebas Neue";
+    text-align: center;
+    letter-spacing: 0.5rem;
+    margin-left: 2rem;
+  }
+
+  .welcome-text p {
+    font-family: "Bebas Neue";
+    text-align: center;
+    font-size: 2.5rem;
+    letter-spacing: 0.3rem;
+  }
+  /* welcome section with logo and text */
+}
+
+@media only screen and (min-width: 1200px) {
+  .top-info ul li {
+    font-size: 2rem;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .open-time {
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 5px;
+    padding-bottom: 5px;
+  }
+
+  .welcome-section {
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo img {
+    border-radius: 2rem;
+    width: 100%;
+  }
+
+  .welcome-text h1 {
+    font-size: 5rem;
+    text-shadow: 1px 1px 5px #333;
+    text-transform: uppercase;
+    font-family: "Bebas Neue";
+    text-align: center;
+    letter-spacing: 0.5rem;
+    margin-left: 2rem;
+  }
+
+  .welcome-text p {
+    font-family: "Bebas Neue";
+    text-align: center;
+    font-size: 2.5rem;
+    letter-spacing: 0.3rem;
+  }
 }
